@@ -4,6 +4,8 @@ const mongoose = require('mongoose')
 
 const app = express()
 
+app.use('/api/auth', require('./routes/auth.routes'))
+
 const PORT = config.get('port') || 5000
 
 async function start() {
@@ -11,7 +13,7 @@ async function start() {
     await mongoose.connect(config.get('mongoUri'), {
       useNewUrlParser: true,
       useUnifiedTopology: true
-    })
+    }, ()=> console.log('MongoDB connected'))
   } catch (e) {
     console.log('Server Error', e.message)
     process.exit(1)
@@ -20,4 +22,4 @@ async function start() {
 
 start()
 
-app.listen(PORT, ()=> console.log(`App has been started on port ${PORT}...`))
+app.listen(PORT, ()=> console.log(`App has been started on port: ${PORT}...`))

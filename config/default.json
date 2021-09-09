@@ -1,4 +1,5 @@
 {
   "port": 5000,
+  "jwtSecret": "1337322228",
   "mongoUri": "mongodb+srv://admin:admin@cluster0.lfmam.mongodb.net/mernstack"
 }
