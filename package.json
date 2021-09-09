@@ -1,0 +1,24 @@
+{
+  "name": "mernstack",
+  "version": "1.0.0",
+  "description": "mern mongoDB express react nodeJs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TONTUSU/mern.git"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "nodeJS"
+  ],
+  "author": "Alexandr Nikolaev <anikotontu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TONTUSU/mern/issues"
+  },
+  "homepage": "https://github.com/TONTUSU/mern#readme"
+}
